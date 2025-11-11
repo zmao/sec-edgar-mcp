@@ -12,6 +12,7 @@ FILING_TYPES = {
     "13F-HR": "Quarterly institutional holdings",
     "SC 13G": "Beneficial ownership report",
     "SC 13D": "Beneficial ownership report with intent",
+    "CORRESP": "Correspondence",
 }
 
 XBRL_NAMESPACES = {

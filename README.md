@@ -56,9 +56,14 @@ Once the SEC EDGAR MCP server is running, you can connect to it with any MCP-com
 
 For comprehensive guides, examples, and tool documentation, visit the [SEC EDGAR MCP Documentation](https://sec-edgar-mcp.amorelli.tech/).
 
+###to build docker image:
+docker build -t zmao/sec-edgar-mcp:latest .
+
 ### Docker Configuration
 
 To use SEC EDGAR MCP with Docker, add the following configuration to your MCP client:
+
+for Claude desktop, add the following to: ~/Library/Application Support/Claude/claude_desktop_config.json
 
 ```json
 {
@@ -71,7 +76,7 @@ To use SEC EDGAR MCP with Docker, add the following configuration to your MCP cl
         "--rm",
         "-e",
         "SEC_EDGAR_USER_AGENT=Your Name (name@domain.com)",
-        "stefanoamorelli/sec-edgar-mcp:latest"
+        "zmao/sec-edgar-mcp:latest"
       ],
       "env": {}
     }
