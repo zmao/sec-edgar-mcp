@@ -13,6 +13,7 @@ FILING_TYPES = {
     "SC 13G": "Beneficial ownership report",
     "SC 13D": "Beneficial ownership report with intent",
     "CORRESP": "Correspondence",
+    "UPLOAD": "Upload",
 }
 
 XBRL_NAMESPACES = {

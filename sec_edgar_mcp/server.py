@@ -112,7 +112,7 @@ def get_recent_filings(identifier: str = None, form_type: str = None, days: int 
 
     Args:
         identifier: Company ticker/CIK (optional, if not provided returns all recent filings)
-        form_type: Specific form type to filter (e.g., "10-K", "10-Q", "8-K", "CORRESP")
+        form_type: Specific form type to filter (e.g., "10-K", "10-Q", "8-K", "CORRESP", "UPLOAD")
         days: Number of days to look back (default: 30)
         limit: Maximum number of filings to return (default: 50)
 
@@ -462,6 +462,11 @@ def get_recommended_tools(form_type: str):
             "tools": ["get_filing_content"],
             "description": "back-and-forth correspondence between the SEC staff and companies regarding a filing.",
             "tips": ["look at the context of the filing to understand the correspondence"],
+        },
+        "UPLOAD": {
+            "tools": ["get_filing_content"],
+            "description": "Uploaded documents and correspondence files submitted to the SEC.",
+            "tips": ["look at the context of the filing to understand the uploaded documents"],
         },
     }
 
